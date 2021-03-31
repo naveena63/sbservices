@@ -1,11 +1,13 @@
 package com.app.sb.sbservices.DescriptionActivity;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import android.os.Bundle;
 
 import com.app.sb.sbservices.R;
+import com.google.android.material.tabs.TabLayout;
 
 public class TabwithViewpager extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
 

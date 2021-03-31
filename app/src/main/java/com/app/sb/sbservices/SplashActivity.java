@@ -5,35 +5,26 @@ import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatImageView;
+
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.widget.ImageView;
-import android.widget.Toast;
+
 
 import com.app.sb.sbservices.DescriptionActivity.MainActivity;
 import com.app.sb.sbservices.Utils.AppConstants;
 import com.app.sb.sbservices.Utils.GlobalVariable;
 import com.app.sb.sbservices.Utils.PrefManager;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
-import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.RemoteMessage;
-
-import java.util.Arrays;
-import java.util.List;
 
 public class SplashActivity extends AppCompatActivity {
 
-  ImageView ivImage;
+  AppCompatImageView ivImage;
     PrefManager prefManager;
 Handler handler;
     @RequiresApi(api = Build.VERSION_CODES.O)

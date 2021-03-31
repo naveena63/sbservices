@@ -2,11 +2,13 @@ package com.app.sb.sbservices;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -15,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -22,7 +26,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.app.sb.sbservices.ReferalId.EarnCreditsActivity;
+
+import com.app.sb.sbservices.Profile.ProfileFragment;
 import com.app.sb.sbservices.ReferalId.RewardsHistoryAdapter;
 import com.app.sb.sbservices.ReferalId.RewardsHistoryModel;
 import com.app.sb.sbservices.Utils.AppConstants;
@@ -42,7 +47,8 @@ import java.util.Map;
  * A simple {@link Fragment} subclass.
  */
 public class EarnCreditsFragment extends Fragment {
-
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 View v;
     String rewardPoints;
     private PrefManager prefManager;
@@ -53,6 +59,16 @@ View v;
 
     RewardsHistoryAdapter rewardsHistoryAdapter;
     TextView no_packages_available;
+
+    public static Fragment newInstance(String s, String s1) {
+        EarnCreditsFragment fragment = new EarnCreditsFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, s);
+        args.putString(ARG_PARAM2, s1);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

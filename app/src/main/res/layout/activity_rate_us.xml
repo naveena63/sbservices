@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Menu.RateUsActivity">
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/rating"
@@ -18,7 +18,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/rating"
-    android:textAlignment="center"
+    android:gravity="center_horizontal"
     android:textSize="@dimen/margin_20dp"
     android:textColor="@color/black"
     android:fontFamily="@font/poppins"

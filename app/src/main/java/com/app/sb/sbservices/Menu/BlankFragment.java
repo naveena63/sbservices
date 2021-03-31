@@ -4,11 +4,13 @@ package com.app.sb.sbservices.Menu;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+
 
 import com.app.sb.sbservices.GuestLoginActivity;
 import com.app.sb.sbservices.Profile.ProfileActivity;
@@ -27,6 +29,16 @@ public class BlankFragment extends Fragment {
     GoogleApiClient mGoogleApiClient;
     PrefManager prefManager;
     TextView editProfile, earnCredits, referalID, help, teramNcondtns, rateUs, Faqs, privacyPolicy, logout, userEmail, userName;
+ private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+    public static Fragment newInstance(String s, String s1) {
+        BlankFragment fragment = new BlankFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, s);
+        args.putString(ARG_PARAM2, s1);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

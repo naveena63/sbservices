@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="180dp">
 
-            <android.support.v4.view.ViewPager
+            <androidx.viewpager.widget.ViewPager
                 android:id="@+id/pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent" />
-            </android.support.v4.view.ViewPager>
+            </androidx.viewpager.widget.ViewPager>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Explore as a Guest"
-                android:textAlignment="center"
+                android:gravity="center_horizontal"
                 android:textColor="@color/black"
 
                 ></com.app.sb.sbservices.Utils.ClanProTextView>
@@ -214,7 +214,7 @@
                 android:visibility="gone" />
         </LinearLayout>
 
-        <android.support.v7.widget.LinearLayoutCompat
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -290,6 +290,6 @@
                 android:textStyle="bold"
                 tools:ignore="OnClick" />-->
 
-        </android.support.v7.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </LinearLayout>
 </LinearLayout>

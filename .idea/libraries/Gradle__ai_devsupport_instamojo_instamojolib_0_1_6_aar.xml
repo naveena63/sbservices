@@ -1,8 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: ai.devsupport.instamojo:instamojolib:0.1.6@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7d4f28e6f4be6856a2f01186ec125a02/instamojolib-0.1.6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7d4f28e6f4be6856a2f01186ec125a02/instamojolib-0.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/788717a3238bdf39ed2a9b06df97c3cd/jetified-instamojolib-0.1.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/788717a3238bdf39ed2a9b06df97c3cd/jetified-instamojolib-0.1.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/788717a3238bdf39ed2a9b06df97c3cd/jetified-instamojolib-0.1.6/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

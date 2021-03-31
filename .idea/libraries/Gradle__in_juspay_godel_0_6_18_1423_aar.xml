@@ -1,11 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: in.juspay:godel:0.6.18.1423@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3058de4f302eef8913a5a166b1cc448f/godel-0.6.18.1423/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f943f32048491a5fcbae3c4d4b23beae/jetified-godel-0.6.18.1423/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3058de4f302eef8913a5a166b1cc448f/godel-0.6.18.1423/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3058de4f302eef8913a5a166b1cc448f/godel-0.6.18.1423/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f943f32048491a5fcbae3c4d4b23beae/jetified-godel-0.6.18.1423/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f943f32048491a5fcbae3c4d4b23beae/jetified-godel-0.6.18.1423/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f943f32048491a5fcbae3c4d4b23beae/jetified-godel-0.6.18.1423/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

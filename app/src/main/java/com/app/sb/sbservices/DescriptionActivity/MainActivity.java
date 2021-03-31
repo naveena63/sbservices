@@ -1,21 +1,18 @@
 package com.app.sb.sbservices.DescriptionActivity;
 
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
-import android.widget.Toolbar;
-
 import com.app.sb.sbservices.R;
+import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends  AppCompatActivity implements TabLayout.OnTabSelectedListener {
+public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
 
-private TabLayout tabLayout;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
-//This is our viewPager
-private ViewPager viewPager;
-@Override
-protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tabwith_viewpager);
         getSupportActionBar().hide();
@@ -34,21 +31,21 @@ protected void onCreate(Bundle savedInstanceState) {
 
         //Adding onTabSelectedListener to swipe views
         tabLayout.setOnTabSelectedListener(MainActivity.this);
-        }
+    }
 
-@Override
-public void onTabSelected(TabLayout.Tab tab) {
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
         viewPager.setCurrentItem(tab.getPosition());
-        }
+    }
 
-@Override
-public void onTabUnselected(TabLayout.Tab tab) {
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
 
-        }
+    }
 
-@Override
-public void onTabReselected(TabLayout.Tab tab) {
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
 
-        }
-        }
+    }
+}
 

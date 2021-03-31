@@ -11,7 +11,7 @@
     android:gravity="center"
     tools:context=".User.LoginActivity">
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logo_one"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -22,7 +22,7 @@
         android:src="@drawable/sb_services_logo" />
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_id"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -38,9 +38,9 @@
             android:inputType="phone"
 
             android:textSize="13dp" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             android:hint="password"
             android:inputType="textPassword"
             android:textSize="13dp" />
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonLogin"
@@ -86,7 +86,7 @@
             android:layout_height="match_parent"
             android:text="Forgot Password"
             android:fontFamily="@font/poppins"
-            android:textAlignment="center"
+            android:gravity="center_horizontal"
             android:textColor="@android:color/black" />
 
 

@@ -14,7 +14,7 @@
         android:text="Average rating"
         android:textColor="@color/black"
         android:id="@+id/averageRating"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
    android:layout_marginTop="5dp"
         android:layout_height="wrap_content"/>
     <RatingBar
@@ -34,13 +34,13 @@
 
     </com.app.sb.sbservices.Utils.ClanProTextView>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_margin="10dp"
         android:layout_height="wrap_content">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
     <TextView
         android:id="@+id/no_packages_available"
         android:layout_width="match_parent"

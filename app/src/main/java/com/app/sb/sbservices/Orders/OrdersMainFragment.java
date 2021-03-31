@@ -1,14 +1,12 @@
 package com.app.sb.sbservices.Orders;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.core.view.MenuItemCompat;
+import androidx.fragment.app.Fragment;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -17,8 +15,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.app.sb.sbservices.Profile.ProfileFragment;
 import com.app.sb.sbservices.R;
 import com.app.sb.sbservices.Utils.Singleton;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +33,16 @@ public class OrdersMainFragment extends Fragment {
     View rootView;
     TabLayout tablayout;
     ViewPager viewPager;
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+    public static Fragment newInstance(String s, String s1) {
+        OrdersMainFragment fragment = new OrdersMainFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, s);
+        args.putString(ARG_PARAM2, s1);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

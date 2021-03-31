@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -39,12 +39,12 @@
                 android:id="@+id/ratingDescrption"
                 android:textSize="15dp"
                 android:text="kflweklwe"
-android:textAlignment="center"
+android:gravity="center_horizontal"
 
                 ></com.app.sb.sbservices.Utils.ClanProTextView>
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 

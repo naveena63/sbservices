@@ -21,7 +21,7 @@
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_light"
             android:text="Your Booking Is Confirmed Our Team Will Meet You Soon"
-            android:textAlignment="center"
+            android:gravity="center_horizontal"
             />
         <Button
             android:id="@+id/submit"

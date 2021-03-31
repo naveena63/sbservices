@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".GuestOtpGenerateActivity">
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
@@ -19,7 +19,7 @@
 
         </ImageView>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:orientation="vertical">
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter Otp" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:id="@+id/submitOtpButn"
         android:layout_width="150dp"
@@ -58,6 +58,6 @@
             android:layout_height="wrap_content"
             android:text="Resend Otp"
             android:textStyle="bold"
-            android:textAlignment="center"/>
+            android:gravity="center_horizontal"/>
     </LinearLayout>
 </LinearLayout>

@@ -2,14 +2,17 @@ package com.app.sb.sbservices.NewDate;
 
 import android.content.Intent;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuItemCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,13 +32,12 @@ import com.android.volley.toolbox.Volley;
 import com.app.sb.sbservices.Cart.CartActivity;
 import com.app.sb.sbservices.Cart.Increment_Listener;
 import com.app.sb.sbservices.Packages.PackageModel;
+
 import com.app.sb.sbservices.R;
-import com.app.sb.sbservices.TimeAndDate.DatePickerListener;
-import com.app.sb.sbservices.TimeAndDate.HorizontalPicker;
 import com.app.sb.sbservices.TimeAndDate.TImeSlotClickListener;
 import com.app.sb.sbservices.TimeAndDate.TimeSlotAdapter;
 import com.app.sb.sbservices.TimeAndDate.TimeSlotModel;
-import com.app.sb.sbservices.TimeAndDate.TimesoltActivity;
+
 import com.app.sb.sbservices.Utils.ApiCallingFlow;
 import com.app.sb.sbservices.Utils.AppConstants;
 import com.app.sb.sbservices.Utils.PrefManager;
@@ -77,7 +79,6 @@ DateTime dateSelected;
     private ApiCallingFlow apiCallingFlow;
     private List<TimeSlotModel> timeModels = new ArrayList<>();
     private TimeSlotAdapter adapter;
-    Toolbar toolbar;
     String slotStatus;
     String datetext;
 

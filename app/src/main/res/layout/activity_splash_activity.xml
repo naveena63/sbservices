@@ -10,7 +10,7 @@
     tools:context=".SplashActivity">
 
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/logo_one"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -34,7 +34,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@id/text_logo"
-    android:textAlignment="center"
+    android:gravity="center_horizontal"
     android:text="@string/sbservices_text"
     android:layout_margin="5dp"
     android:textColor="@android:color/black"
@@ -43,7 +43,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@id/text_sbservices"
-android:textAlignment="center"
+android:gravity="center_horizontal"
 android:text="@string/quick_affrod_trust"
     android:textSize="15dp"
     android:textColor="@android:color/black"

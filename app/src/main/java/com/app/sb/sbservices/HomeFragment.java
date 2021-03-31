@@ -5,15 +5,16 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.core.content.ContextCompat;
+import androidx.core.view.MenuItemCompat;
+import androidx.fragment.app.Fragment;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -23,6 +24,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
@@ -38,6 +42,7 @@ import com.app.sb.sbservices.HomeBanners.BannerAdapter;
 import com.app.sb.sbservices.OfferBanners.OfferBanners;
 import com.app.sb.sbservices.OfferBanners.OffersAdapter;
 import com.app.sb.sbservices.Packages.PackagesActivity;
+import com.app.sb.sbservices.Profile.ProfileFragment;
 import com.app.sb.sbservices.Utils.ApiCallingFlow;
 import com.app.sb.sbservices.Utils.AppConstants;
 import com.app.sb.sbservices.Utils.PrefManager;
@@ -64,7 +69,8 @@ import static com.facebook.FacebookSdk.getApplicationContext;
 
 
 public class HomeFragment extends Fragment implements HomeScreenListener {
-
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
     public static final String NAMES = "category_name";
     public static final String IMAGES = "category_icon";
     private TextView mTextView, viewMoreServcies;
@@ -81,6 +87,15 @@ public class HomeFragment extends Fragment implements HomeScreenListener {
     List<ServicesListModel> servicesList;
     ApiCallingFlow apiCallingFlow;
     private HomeScreenListener homeScreenListener;
+
+    public static Fragment newInstance(String s, String s1) {
+        HomeFragment fragment = new HomeFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, s);
+        args.putString(ARG_PARAM2, s1);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

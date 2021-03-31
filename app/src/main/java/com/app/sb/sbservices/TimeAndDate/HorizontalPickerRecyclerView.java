@@ -1,11 +1,13 @@
 package com.app.sb.sbservices.TimeAndDate;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.LinearSmoothScroller;
-import android.support.v7.widget.LinearSnapHelper;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+
+import androidx.recyclerview.widget.LinearSmoothScroller;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -113,7 +115,7 @@ public class HorizontalPickerRecyclerView extends RecyclerView implements OnItem
 
     @Override
     public void smoothScrollToPosition(int position) {
-        final RecyclerView.SmoothScroller smoothScroller = new CenterSmoothScroller(getContext());
+        final SmoothScroller smoothScroller = new CenterSmoothScroller(getContext());
         smoothScroller.setTargetPosition(position);
         post(new Runnable() {
             @Override
